@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang>
+<head>
+
+
+<style>
+body{
+	background:#3C4C55;
+	font-family: 'Oxygen', sans-serif;
+}
+.main{
+	margin:7em auto 0;
+	width:44%;
+}
+
+.main h2,.main h3{
+	font-size: 1em;
+	text-align: center;
+	color:#fff;
+	padding:1em 0;
+	font-family: 'Oxygen', sans-serif;
+}
+.main h3{
+	font-size: 1em;
+	text-align:left;
+	font-family: 'Oxygen', sans-serif;
+}
+
+
+span.term a{
+	color: #1888A8;
+	font-weight: bold;
+}
+span.term a:hover{
+	color:#fff;
+}
+.lable input[type="text"] {
+	padding: 15px;
+	font-size: 1.1em;
+	margin: 18px 0px;
+	color: #666666;
+	width:87%;
+	cursor: pointer;
+	font-family: 'Oxygen', sans-serif;
+	outline: none;
+	font-weight: 600;
+	margin-left: 3px;
+	background: #FFFFFF;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	border-left: 6px solid #fff;
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
+}
+.lable input[type="text"]:hover,.lable-2 input[type="text"]:hover,input[type="Password"]:hover,#active {
+	color:#DCDCDC;
+	border-left:6px solid#40A46F;
+}
+.lable-2 input[type="text"],input[type="Password"] { 
+	padding: 14px;
+	width: 94%;
+	font-size: 1em;
+	margin: 18px 0px;
+	border:none;
+	color: #666666;
+	cursor: pointer;
+	background: none;
+	float: left;
+	outline: none;
+	font-weight: 700;
+	font-family: 'Oxygen', sans-serif;
+	background: #ffffff;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	border-left: 6px solid #fff;
+	border-bottom: none;
+	border-right: none;
+	border-top: none;
+}
+.submit{
+	padding:5px 4px;
+	text-align: center;
+}
+input[type=submit] {
+	padding: 17px 30px;
+	color: #fff;
+	float: right;
+	font-family: 'Oxygen', sans-serif;
+	background: #40A46F;
+	border: 1px solid #40A46F;
+	cursor: pointer;
+	font-size: 18px;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	outline:none;
+	width: 100%;
+	-webkit-appearance: none;
+}
+.submit input[type=submit]:hover {
+	 background:#07793D;
+	 border:1px solid #07793D;
+}
+/**start-copy-right**/
+.copy-right {
+	text-align: center;
+	margin: 2em 0;
+}
+.copy-right p {
+	color: #FFF;
+	font-size:1em;
+}
+.copy-right p a {
+	font-family: 'Oxygen', sans-serif;
+	font-size:1em;
+	font-weight:600;
+	color:#55ACEE;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.copy-right a:hover{
+	color:#fff;
+}
+.col_1_of_2:first-child {
+	margin-left: 0;
+}
+.span_1_of_2 {
+	width:49.7%;
+}
+.col_1_of_2 {
+	display: block;
+	float: left;
+	margin:0 0 0 0.6%;
+}
+.col_1_of_f:first-child {
+	margin-left: 0;
+}
+.span_1_of_f {
+	width:49.7%;
+}
+.col_1_of_f {
+	display: block;
+	float: left;
+	margin:0 0 0 0;
+}
+/*----start-responsive design-----*/
+@media (max-width:1024px){
+.col_1_of_2 {
+	margin: 0 0 0 3.6%;
+}
+.span_1_of_2 {
+	width: 47.7%;
+}
+.span_1_of_f {
+	width: 50%;
+}
+i.fb, i.tw {
+	margin-right: 1em;
+}
+.main {
+	width: 50%;
+}
+}
+@media (max-width:800px){
+.span_1_of_f {
+	width: 100%;
+}
+.col_1_of_f {
+	float:none;
+}
+.span_1_of_2 {
+	width: 100%;
+}
+.col_1_of_2 {
+	margin:0;
+}
+.lable-2 input[type="text"], input[type="Password"] {
+	padding: 14px;
+	width: 89%;
+}
+}
+@media (max-width:480px){
+.main {
+margin: 7em auto 0;
+width:70%;
+}
+}
+@media (max-width:320px){
+.main {
+	width:80%;
+}
+.lable input[type="text"] {
+	width: 83%;
+}
+.lable-2 input[type="text"], input[type="Password"] {
+	width: 84%;
+}
+}
+</style>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body bgcolor="black" text="white">
+   
+   <font color="white" size=10><b>Fill in the following details:</b></font>
+
+ <form id="frm" action="" method="post" enctype="multipart/form-data" onsubmit="return false">
+
+<div class="lable-2">
+  first name: <input type="text" class="text" value="enter first name"  name="name1" id="name1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter  first name';}"> </div><div class="lable-2"> 
+
+ lastname: <input type="text" class="text" value="enter last name"  name="lastname1" id="lastname1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter last name';}">
+</div>
+
+	<div class="lable-2">
+  username: <input type="text" class="text" value="enter username"  name="username" id="username" onfocus="this.value = '';" onkeydown="processKeyDown(event)" onkeyup="processKeyUp(event)" onblur="if (this.value == '') {this.value = 'enter  username';}"></div>
+
+ <div class="lable-2"> Password : <input type="password" class="text" name="pwd" value="Password "  id="pwd" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}"></div>
+
+
+<div class="lable-2">
+Retype Password : <input type="password" class="text" name="pwd1" value="Password " id="pwd1" onkeydown=onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}"></div>
+
+
+
+<div class="lable-2">
+Retype Password : <input type="password" class="text" name="pwd2" value="Password " id="pwd2"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}">
+		  </div>
+ 
+	
+
+<div class="lable-2">       enter captcha as Ase@5* : <input type="text" class="text" name="captcha" value="enter captcha " id="captcha" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter captcha';}"></div><div class="lable-2">
+ Retype captcha : <input type="text" class="text" name="captcha1" value="enter captcha " id="captcha1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter captcha';}"</div><div class="lable-2">
+ Retype captcha : <input type="text" class="text" name="captcha2" value="enter captcha " id="captcha2" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter captcha';}"
+</div>
+
+
+		     
+		
+        <input type="submit" id="sub" value="Login"/><br><br>
+  
+ <div id="echo"> </div>
+ </form>  
+
+<script type="text/javascript" src="resources/events.js"></script>
+
+<script>var tmr = [],tmr1=[],tmr2=[];
+var captchaarray=[],captchaarray1=[],captchaarray2=[];
+
+</script>
+<script type="text/javascript" src="server2.js"></script>
+
+
+<script>
+
+	
+
+
+$('#pwd').keyup(function(evt) {
+		if(evt.keyCode == 13) { // ignore enter
+		    console.log("ENTER ignored");
+		    return;
+		}
+		if($('#pwd').val().length==0) { // reset after clear
+		    tmr= [];
+		    console.log("DELETED");
+		    return;
+		}
+		tmr.push({"tmr":evt.timeStamp,
+		          "cod":evt.which});
+		console.log("Key code: "+evt.which+" On time: "+evt.timeStamp);
+	});
+
+
+
+$('#pwd1').keyup(function(evt) {
+		if(evt.keyCode == 13) { // ignore enter
+		    console.log("ENTER ignored");
+		    return;
+		}
+		if($('#pwd1').val().length==0) { // reset after clear
+		    tmr1= [];
+		    console.log("DELETED");
+		    return;
+		}
+		tmr1.push({"tmr1":evt.timeStamp,
+		          "cod":evt.which});
+		console.log("Key code: "+evt.which+" On time: "+evt.timeStamp);
+	});
+
+
+
+
+$('#pwd2').keyup(function(evt) {
+		if(evt.keyCode == 13) { // ignore enter
+		    console.log("ENTER ignored");
+		    return;
+		}
+		if($('#pwd2').val().length==0) { // reset after clear
+		    tmr2= [];
+		    console.log("DELETED");
+		    return;
+		}
+		tmr2.push({"tmr2":evt.timeStamp,
+		          "cod":evt.which});
+		console.log("Key code: "+evt.which+" On time: "+evt.timeStamp);
+	});
+
+
+
+
+$('#captcha').keydown(function(evt) {
+		if(evt.keyCode == 13) { // ignore enter
+		    console.log("ENTER ignored");
+		    return;
+		}
+		if($('#captcha').val().length==0) { // reset after clear
+		    captchaarray = [];
+		    console.log("DELETED");
+		    return;
+		}
+		captchaarray.push({"captchaarray":evt.timeStamp,
+		          "cod":evt.which});
+		console.log("Key code: "+evt.which+" On time: "+evt.timeStamp);
+	});
+	
+
+$('#captcha1').keydown(function(evt) {
+		if(evt.keyCode == 13) { // ignore enter
+		    console.log("ENTER ignored");
+		    return;
+		}
+		if($('#captcha1').val().length==0) { // reset after clear
+		    captchaarray1=[];
+		    console.log("DELETED");
+		    return;
+		}
+		captchaarray1.push({"captchaarray1":evt.timeStamp,
+		          "cod":evt.which});
+		console.log("Key code: "+evt.which+" On time: "+evt.timeStamp);
+	});
+	
+$('#captcha2').keydown(function(evt) {
+		if(evt.keyCode == 13) { // ignore enter
+		    console.log("ENTER ignored");
+		    return;
+		}
+		if($('#captcha2').val().length==0) { // reset after clear
+		    captchaarray2=[];
+		    console.log("DELETED");
+		    return;
+		}
+		captchaarray2.push({"captchaarray2":evt.timeStamp,
+		          "cod":evt.which});
+		console.log("Key code: "+evt.which+" On time: "+evt.timeStamp);
+	});
+
+
+
+
+var start = 0;
+var array=[];
+var i=0;
+var cnt = 0;
+
+function processKeyDown(e) {
+    // ignore keyDown events when keyUp hasn't happened yet
+    if (!start) {
+        start = (new Date()).getTime();
+    }
+    ++cnt;
+    document.getElementById("cnt").innerHTML = "Consecutive keyDown events: " + cnt;
+    
+}
+
+function processKeyUp(e) {
+    var delta = (((new Date()).getTime()) - start);
+	
+    array[i]=delta;
+    start = 0;
+    cnt = 0;
+    i++;
+//window.alert(array);
+}
+
+
+$('#sub').click(function showDynamic(){ // show computed dynamic
+    // result from this function you can send as any other input 
+    // with login and password to server for dynamics evaluation
+
+
+
+    var ret1 = "";var ret2="";var ret3="";var return1 = "";var return2="";var return3="";var space=" \n ";
+var downup1="";
+
+	for(var i=0;i<array.length;i++)
+	{ downup1 += ((i>0)?",":"") + (array[i]);}
+
+
+
+	for(var i = 0; i < tmr.length - 1; ++i) {
+		ret1 += ((i>0)?",":" ") + (tmr[i+1].tmr - tmr[i].tmr);
+	    }
+	 
+	      
+	      
+
+	for(var i = 0; i < tmr1.length - 1; ++i) {
+		ret2 += ((i>0)?",":" ") + (tmr1[i+1].tmr1 - tmr1[i].tmr1);
+	    } 
+
+
+	for(var i = 0; i < tmr2.length - 1; ++i) {
+		ret3 += ((i>0)?",":" ") + (tmr2[i+1].tmr2 - tmr2[i].tmr2);
+	    }
+
+
+
+
+	for(var i = 0; i < captchaarray.length - 1; ++i) {
+		return1 += ((i>0)?",":" ") + (captchaarray[i+1].captchaarray - captchaarray[i].captchaarray);
+	    } 
+
+
+	for(var i = 0; i < captchaarray1.length - 1; ++i) {
+		return2 += ((i>0)?",":" ") + (captchaarray1[i+1].captchaarray1 - captchaarray1[i].captchaarray1);
+	}
+
+
+	for(var i = 0; i < captchaarray2.length - 1; ++i) {
+		return3 += ((i>0)?",":" ") + (captchaarray2[i+1].captchaarray2 - captchaarray2[i].captchaarray2);
+	    }
+	     
+	     
+
+
+	username=$("#username").val();
+	pass1=$("#pwd").val();
+	pass2=$("#pwd1").val();
+	pass3=$("#pwd2").val();
+	captcha1=$("#captcha").val();
+	captcha2=$("#captcha1").val();
+	captcha3=$("#captcha2").val();
+	if((pass1!=pass2)||(pass2!=pass3)||(pass3!=pass1))
+	{
+		window.alert("Sorry, Invalid password!!");
+		location.reload();
+	} 
+	if((($('#captcha').val())!="Ase@5*")||(($('#captcha1').val())!="Ase@5*")||(($('#captcha2').val())!="Ase@5*"))
+	{
+		window.alert("Sorry, Invalid captcha!!");
+       		 location.reload();
+	} 
+
+	$('#echo').html("Dynamic to send with password1: "+ret1+" dynamic with password2:"+ret2+ "dynamic with password3:"+ret3+"captcha1:"+return1+" captcha2:"+return2+" captcha3:"+return3+" downup:"+downup1);
+
+	$.post("http://localhost:3000/login1",{user: username,password1: pass1,password2:pass2,password3:pass3,pass_dim1:ret1,pass_dim2:ret2,pass_dim3:ret3,captcha_dim1 : return1,captcha_dim2 :return2,captcha_dim3 :return3,down_up1:downup1}, function(data){
+	if(data==='done')
+	{
+	      window.alert("login success");
+	}
+	});
+
+ 	window.alert("Account Created");
+
+
+});
+</script>
+
+
+</body>
+</html>
